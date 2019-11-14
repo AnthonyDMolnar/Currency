@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<TextView
+    android:id="@+id/labelCurrency"
+    android:layout_width="300dp"
+    android:layout_height="40dp"
+    android:layout_marginTop="200dp"
+    android:text="Name of Currency: "
+    android:textSize="30dp"
+    android:layout_alignParentTop="true"
+    />
+<EditText
+    android:id="@+id/etCurrency"
+    android:layout_width="150dp"
+    android:layout_height="80dp"
+    android:layout_toRightOf="@id/labelCurrency"
+    android:layout_alignBottom="@id/labelCurrency"
+    android:textSize="30dp"
+    />
+<TextView
+    android:id="@+id/labelRate"
+    android:layout_width="300dp"
+    android:layout_height="40dp"
+    android:layout_marginTop="200dp"
+    android:text="Conversion Rate: "
+    android:textSize="30dp"
+    android:layout_below="@+id/labelCurrency"
+    />
+<EditText
+    android:id="@+id/etRate"
+    android:layout_width="150dp"
+    android:layout_height="80dp"
+    android:layout_toRightOf="@id/labelRate"
+    android:layout_alignBottom="@id/labelRate"
+    android:textSize="30dp"
+    android:inputType="numberDecimal"
+    />
+<Button
+    android:id="@+id/addButton"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:textSize="30dp"
+    android:gravity="center"
+    android:text="Add"
+    android:layout_below="@id/labelRate"
+    android:onClick="insert"
+    />
+<Button
+    android:id="@+id/backButton"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:textSize="30dp"
+    android:gravity="center"
+    android:text="Back"
+    android:layout_below="@id/addButton"
+    android:onClick="close"
+    />
+</RelativeLayout>

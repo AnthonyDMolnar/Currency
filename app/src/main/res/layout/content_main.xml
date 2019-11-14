@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<TextView
+    android:id="@+id/labelAmount"
+    android:layout_width="300dp"
+    android:layout_height="40dp"
+    android:layout_marginTop="200dp"
+    android:text="Amount to convert"
+    android:textSize="30dp"
+    android:layout_alignParentTop="true"
+    />
+<EditText
+    android:id="@+id/etAmount"
+    android:layout_width="150dp"
+    android:layout_height="80dp"
+    android:layout_toRightOf="@id/labelAmount"
+    android:layout_alignBottom="@id/labelAmount"
+    android:textSize="30dp"
+    android:inputType="numberDecimal"
+    />
+<Button
+    android:id="@+id/convertButton"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:textSize="30dp"
+    android:gravity="center"
+    android:text="Convert"
+    android:layout_below="@id/labelAmount"
+    android:onClick="convert"
+    />
+<TextView
+    android:id="@+id/answer"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:layout_below="@id/convertButton"
+    android:textSize="30dp"
+    />
+</RelativeLayout>
